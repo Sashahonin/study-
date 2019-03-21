@@ -12,7 +12,7 @@ begin
     Write(A[i], ' ');
   Writeln();
 
-  p:=0;
+  p:=1;
   for i := 1 to N do
     if(10 <= a[i]) and (a[i] <= 99) and (a[i] mod 6 <> 0)then
      p:= p*a[i];
