@@ -5,6 +5,7 @@ const
 var
   a: array [1..N, 1..N] of integer;
   i, j, sum, P, t: integer;
+  sr : real;
 
 begin
 
@@ -29,11 +30,11 @@ begin
     p := p + 1;
   end;
 
-
+  sr:=sum / p;
   t := 0;
   for i := 1 to N do
     for j := 1 to n do
-      if A[i, j] > sum / p then
+      if A[i, j] > sr  then
         t := t + 1;
   Writeln(t);
   Readln();

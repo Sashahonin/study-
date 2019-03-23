@@ -24,8 +24,10 @@ begin
   Writeln();
 
   for i := 1 to N do
+  begin
     sum := sum + A[i, i];
-  p := p + 1;
+    p := p + 1;
+  end;
   Writeln(sum / p);
   Readln();
 end.

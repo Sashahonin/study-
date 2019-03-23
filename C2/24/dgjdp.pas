@@ -1,7 +1,7 @@
 program dgjdp;
 
 const
-  N = 10;
+  N = 2;
 var
   a: array [1..N, 1..N] of integer;
   i, j, sum, max: integer;
@@ -22,14 +22,14 @@ begin
   Writeln();
 
 
-  sum:=0;
-  max:=0;
+  sum := 0;
   for i := 1 to N do
   begin
+    max := 0;
     for j := 1 to n do
-     If A[i,J]>max then
-        max:=A[i,j];
-    sum:=sum+max;
+      if A[i, J] > max then
+        max := A[i, j];
+    sum := sum + max;
   end;
 
 

@@ -16,13 +16,18 @@ begin
     Write(A[i], ' ');
   Writeln();
 
-  m:=0;
+  m := A[1];
+  j := 1;
   for i := 1 to N do
-    if A[i] > m  then
-     m:= A[i];
-  for  i := 1 to N do
+  begin
     if A[i] = m then
-     j:=j+1;
-    Write(j);
+      j := j + 1;
+    if A[i] > m then
+    begin
+      m := A[i];
+      j := 1;
+    end;
+  end;
+  Write(j);
   Readln();
 end.

@@ -16,10 +16,14 @@ begin
     Write(A[i], ' ');
   Writeln();
 
-  m := 1000;
+  m := 0;
+  j:=0;
   for i := 1 to N do
-    if (a[i] > 0) and (a[i] mod 10 = 7) and ((a[i] < m) or (m = 0)) then
+    if (a[i] > 0) and (a[i] mod 10 = 7) and ((a[i] < m) or (j = 0)) then
+    begin
       m := A[i];
+      j := 1;
+    end;
   writeln(m);
   Readln();
 end.
