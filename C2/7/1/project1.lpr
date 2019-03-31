@@ -4,7 +4,8 @@ const
   N = 5;
 var
   a: array [1..N] of integer;
-  i, x: integer;
+  i, x, j: integer;
+  found: boolean;
 begin
   randomize();
   for i := 1 to N do
@@ -15,13 +16,18 @@ begin
   Writeln();
   Readln(x);
 
+  j:=0;
+  found:=false;
   for i := 1 to N do
-    if A[i] = x then
+    if (A[i] = x) and (not found) then
     begin
-      writeln(i);
-      break;
+      j:=i;
+      found:=true;
     end;
-      Writeln('No');
+    if not found then
+      Writeln('No')
+    else
+      Writeln(j);
   readln();
 end.
-//5
+

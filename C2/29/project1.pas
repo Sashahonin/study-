@@ -19,13 +19,22 @@ begin
 
   max1 := 0;
   Max2 := 0;
-  k := 0;
+  if a[1] > a[2] then
+  begin
+    max1:=a[1];
+    max2:=a[2];
+  end
+  else
+  begin
+    max1:=a[2];
+    max2:=a[1];
+  end;
+
   for I := 1 to n do
-    if (A[i] > max1) or (k = 0) then
+    if (A[i] >= max1) then
     begin
       max2 := max1;
       max1 := A[i];
-      k := 1;
     end;
   writeln(max2);
   Readln();

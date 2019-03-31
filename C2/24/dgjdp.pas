@@ -25,8 +25,8 @@ begin
   sum := 0;
   for i := 1 to N do
   begin
-    max := 0;
-    for j := 1 to n do
+    max := a[i, 1];
+    for j := 1 to N do
       if A[i, J] > max then
         max := A[i, j];
     sum := sum + max;
