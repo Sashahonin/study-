@@ -27,7 +27,10 @@ begin
   for i := 1 to N do
     for j := 1 to N do
       if A[i, j] > max then
+      begin
         k := i;
+        max := a[i,j];
+      end;
   for j := 1 to N do
     sum := sum + A[k, j];
 

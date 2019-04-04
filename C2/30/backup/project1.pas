@@ -21,10 +21,8 @@ begin
     begin
       j := a[i];
       k := k + 1;
-      if (k = 3) and (N >= 3) then
+      if k = 3 then
         Writeln(j);
     end;
-  if N < 3 then
-    Writeln('No');
   Readln();
 end.
