@@ -21,10 +21,10 @@ begin
   k := 1;
   smax := 0;
   for i := 2 to n do
-    if a[i]  >  a[i - 1] then
+    if a[i] + 1 = a[i + 1] then
     begin
       k := k + 1;
-      smax := smax + a[i];
+      smax := smax + a[i - 1];
     end
     else
     begin

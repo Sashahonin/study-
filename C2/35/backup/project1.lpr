@@ -1,4 +1,3 @@
-
 program project1;
 
 const
@@ -19,7 +18,7 @@ begin
   Writeln();
 
   max:= a[1] + a[2] + a[3];
-  for i :=  1 to n - 2 do
+  for i :=  1 to n do
    if  a[i] + a[i+1] + a[i+2] > max then
    begin
      max := a[i] + a[i+1] + a[i+2];

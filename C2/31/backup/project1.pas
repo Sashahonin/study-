@@ -19,7 +19,7 @@ begin
 
   j := 1;
   k := a[1] + a[2];
-  for i := 1 to n - 1  do
+  for i := 1 to n do
     if a[i] + a[i + 1] > k then
     begin
       k := a[i] + a[i + 1];

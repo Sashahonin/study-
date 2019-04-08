@@ -15,16 +15,18 @@ begin
   for i := 1 to N do
     Write(A[i], ' ');
   Writeln();
+
   k := 0;
   for i := 1 to N do
-    if a[i] = abs(a[i]) then
+    if a[i] > 0 then
     begin
-      j := a[i];
       k := k + 1;
-      if (k = 3) and (N >= 3) then
-        Writeln(j);
+      if (k = 3) then
+        J := i;
     end;
   if N < 3 then
-    Writeln('No');
+    writeln('No')
+  else
+    writeln(j);
   Readln();
 end.

@@ -21,21 +21,24 @@ begin
   Max2 := 0;
   if a[1] > a[2] then
   begin
-    max1:=a[1];
-    max2:=a[2];
+    max1 := a[1];
+    max2 := a[2];
   end
   else
   begin
-    max1:=a[2];
-    max2:=a[1];
+    max1 := a[2];
+    max2 := a[1];
   end;
 
-  for I := 1 to n do
-    if (A[i] >= max1) then
+  for I := 3 to n do
+    if (A[i] > max1) then
     begin
       max2 := max1;
       max1 := A[i];
-    end;
+    end
+    else
+    if a[i] > max2 then
+      max2 := a[i];
   writeln(max2);
   Readln();
 end.
