@@ -1,0 +1,11 @@
+@echo 
+
+fpc %~n0.pas
+set dst=tests
+
+FOR %%i IN (%dst%\*.a) DO (
+%~n0.exe < %dst%\%%~ni > %dst%\%%~ni.out
+fc /a %dst%%~ni.a %dst%%~ni.out 
+)
+del %~n0.exe %~n0.o %dst%%~ni.out
+pause 

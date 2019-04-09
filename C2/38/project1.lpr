@@ -6,8 +6,13 @@ var
   i, k, kMax: integer;
 begin
 
-  for i:=1 to N do
-    readln(A[i] );
+  randomize();
+  for i := 1 to N do
+    A[i] := random(40);
+
+  for i := 1 to N do
+    Write(A[i], ' ');
+  Writeln();
 
   k := 0;
   kMax := 0;
@@ -20,6 +25,7 @@ begin
       kMax := k
 end;
 writeln(kMax);
+readln();
 
 end.
 
