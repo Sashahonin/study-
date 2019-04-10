@@ -21,10 +21,10 @@ begin
     if a[i] > 0 then
     begin
       k := k + 1;
-      if (k = 3) then
+      if k = 3 then
         J := i;
     end;
-  if N < 3 then
+  if k < 3 then
     writeln('No')
   else
     writeln(j);

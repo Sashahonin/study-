@@ -19,7 +19,7 @@ begin
 
   max := 0;
   k := 1;
-  smax := 0;
+  smax := a[1];
   for i := 2 to n do
     if a[i]  >  a[i - 1] then
     begin

@@ -1,4 +1,4 @@
-program project1;
+program simple;
 
 const
   N = 7;

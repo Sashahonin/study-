@@ -1,4 +1,4 @@
-program dvs;
+program simple;
 
 const
   N = 2;

@@ -1,4 +1,4 @@
-program project1;
+program simple;
 
 const
   N = 4;
@@ -19,11 +19,11 @@ begin
 
   j := 1;
   k := a[1] + a[2];
-  for i := 1 to n - 1  do
+  for i := 2 to n - 1  do
     if a[i] + a[i + 1] > k then
     begin
-      k := a[i] + a[i + 1];
       j := i;
+      k := a[i] + a[i + 1];
     end;
   writeln(j);
   readln();

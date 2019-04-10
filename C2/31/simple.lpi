@@ -11,7 +11,7 @@
       </Flags>
       <SessionStorage Value="InProjectDir"/>
       <MainUnit Value="0"/>
-      <Title Value="project1"/>
+      <Title Value="simple"/>
       <UseAppBundle Value="False"/>
       <ResourceType Value="res"/>
     </General>
@@ -28,7 +28,7 @@
     </RunParams>
     <Units Count="1">
       <Unit0>
-        <Filename Value="project1.lpr"/>
+        <Filename Value="simple.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit0>
     </Units>
