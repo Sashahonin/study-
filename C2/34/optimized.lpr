@@ -6,12 +6,12 @@ program optimized;
 
 begin
   readln(n);
-  readln(x);
+  read(x);
   max := x;
   min := x;
   for i := 2 to n do
   begin
-    readln(x);
+    read(x);
     if x > max then
       max := x;
     if x < min  then

@@ -4,7 +4,7 @@ const
   N = 7;
 var
   a: array [1..N] of integer;
-  i, max, k, s, smax: integer;
+  i, lmax, k, s, smax: integer;
 
 
 begin
@@ -17,25 +17,28 @@ begin
     Write(a[i], ' ');
   Writeln();
 
-  max := 0;
+
+  lmax := 0;
   k := 1;
-  smax := a[1];
-  for i := 2 to n do
-    if a[i]  >  a[i - 1] then
+  s := a[1];
+  for i := 2 to N do
+  begin
+    if a[i] > a[i - 1] then
     begin
       k := k + 1;
-      smax := smax + a[i];
+      s := s + a[i];
     end
     else
     begin
-      if k > max then
-      begin
-        max := k;
-        s := smax;
-      end;
       k := 1;
-      smax := 0;
+      s := a[i];
     end;
-  writeln(s);
+    if k > lmax then
+    begin
+      lmax := k;
+      smax := s;
+    end;
+  end;
+  writeln(smax);
   readln();
 end.

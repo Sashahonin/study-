@@ -2,11 +2,12 @@ program optimized;
 uses
   math;
 var
- cursum, curmax, max, maxsum, j, i, n:integer;
+ cursum, curmax, allmax, maxsum, j, i, n, x:integer;
 
 
 begin
-  read
+  readLn(n);
+  allmax:=0;
   for i := 1 to N do
   begin
     cursum := 0;
@@ -17,9 +18,11 @@ begin
      cursum := cursum + x;
      curmax :=  max(curmax, x);
     end;
-    max := max(max, x);
-    if curmax > max then
+    allmax := max(allmax, x);
+    if curmax > allmax then
       maxsum := cursum;
   end;
+  writeln(maxsum);
+  readln();
 end.
 

@@ -8,4 +8,4 @@ FOR %%i IN (%dst%\*.a) DO (
 fc /a %dst%%~ni.a %dst%%~ni.out 
 )
 del %~n0.exe %~n0.o %dst%%~ni.out
-pause 
+pause 2
