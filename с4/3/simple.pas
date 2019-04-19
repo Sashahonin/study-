@@ -7,22 +7,24 @@ const
   Nlim = 100;
 var
   a: array [1..Nlim] of integer;
-  i, allmax, n, j ,r : integer;
-  found: boolean;
+  i,  n, j ,r ,max: integer;
 
 begin
   readln(n);
   for i := 1 to N do
     readln(A[i]);
 
-  allmax:=0;
   r:= 0;
   readln(r);
-  found:= false;
-  for i := 1 to n do
+  max := 0;
+  for i := 1 to n-1 do
     for j :=i+1 to n do
-      if (r = a[i] * a[j]) and (r mod 14 = 0) then
-        found := true;
-  writeln(r,' ', found);
+      if (max < a[i] * a[j]) and (a[i] * a[j] mod 14 = 0) then
+        max := a[i] * a[j];
+  writeln(max);
+  if r = max then
+    writeln('Yes')
+  else
+    writeln('No');
   readln();
 end.
