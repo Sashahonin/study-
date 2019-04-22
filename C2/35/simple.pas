@@ -25,7 +25,7 @@ begin
      num1 := a[i];
      num2 :=a[i+1];
      num3 :=a[i+2];
-     j:= i;
+      max:= a[i] + a[i+1] + a[i+2];
    end;
 
   writeln(num1,' ', num2, ' ',num3);
