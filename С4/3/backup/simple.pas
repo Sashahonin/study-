@@ -10,8 +10,8 @@ var
   i,  n, j ,max: integer;
 
 begin
-  //assign(input, 'tests\00');
-  //reset(input);
+  assign(input, 'tests\00');
+  reset(input);
   readln(n);
   for i := 1 to N do
     read(A[i]);
