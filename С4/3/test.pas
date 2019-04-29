@@ -20,19 +20,18 @@ var
     begin
       x := a[i];
       if (x mod 14 = 0) and (x > k14) then
-      begin
-        k14 := x;
-        found := 1;
-      end
-      else
-      begin
-        if (x mod 7 = 0) and (x > k7) then
-          k7 := x;
-        if (x mod 2 = 0) and (x > k2) then
-          k2 := x;
-      end;
-      if (x > max) and (found = 0) then
-        max := x;
+    begin
+      if k14 > max then
+        max := k14;
+      k14 := x;
+    end
+    else
+    if x > max then
+      max := x;
+    if (x mod 7 = 0) and (x > k7) and (x mod 2 <> 0) then
+      k7 := x;
+    if (x mod 2 = 0) and (x > k2) and (x mod 7 <> 0) then
+      k2 := x;
     end;
     if (k14 * max > k7 * k2) then
       exit(k14 * max)

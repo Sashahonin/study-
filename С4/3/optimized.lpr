@@ -15,12 +15,11 @@ begin
     if (x mod 14 = 0) and (x > k14) then
     begin
       if k14 > max then
-      begin
         max := k14;
-        k14 := x;
-      end;
+      k14 := x;
     end
-    else if x > max then
+    else
+    if x > max then
       max := x;
     if (x mod 7 = 0) and (x > k7) and (x mod 2 <> 0) then
       k7 := x;

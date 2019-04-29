@@ -5,12 +5,12 @@ var
 
 begin
   Readln(n);
-  for i := 1 to n do
   min21 := 30001;
   min11 := 30001;
   allmin1 := 30001;
   min22 := 30001;
   min12 := 30001;
+  for i := 1 to n do
   begin
     Read(x);
     if (x < min21) and (x mod 2 = 0) then
@@ -36,9 +36,33 @@ begin
       allmin2 := x;
 
   end;
-  if (min12 = 30001) or (min21 = 30001) or (min11 = 30001) or (min22 = 30001) then
-    Writeln(allmin1 + allmin2)
-  else if (min12 + min11) > (min22 + min21) then
+  if (min12 = 30001) or (min11 = 30001) then
+  begin
+    if (min21 = 30001) or (min22 = 30001) then
+    begin
+      Writeln(allmin1 + allmin2);
+      exit;
+    end
+    else
+    begin
+      Writeln(min22 + min21);
+      exit;
+    end;
+  end
+  else
+  begin
+    if (min21 = 30001) or (min22 = 30001) then
+    begin
+      Writeln(allmin1 + allmin2);
+      exit;
+    end
+    else
+    begin
+      Writeln(min11 + min12);
+      exit;
+    end;
+  end;
+  if (min12 + min11) > (min22 + min21) then
     Writeln(min22 + min21)
   else
     writeln(min12 + min11);
