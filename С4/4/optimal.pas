@@ -1,29 +1,32 @@
 program optimal;
+uses math;
 var
-  k,i,n: longint;
-  max , sum ,x:real;
-  found : boolean;
+  N, i: longint;
+  x: real;
+  q: longint = 0;        // количество элементов в основном подмножестве
+  max1: real = 0;        // минимальный элемент подмножества
+  min1: real = 1000001;  // максимальный элемент из чисел < 1
+  f: boolean = False;    // найдено ли число > 1
 
 begin
-  Readln(N);
-  sum:=1;
-  max:=0;
-  k:=0;
+
+  //assign(input, 'tests\05');
+  //reset(input);
+  readln(N);
   for i := 1 to n do
   begin
-    Read(x);
+    read(x);
     if x > 1 then
     begin
-      sum:= sum * x;
-      k := k +1;
-      found := true;
+      min1 := min( min1, x);
+      q := q + 1;
+      f := True;
     end;
-    if (x > max) and (x<1) then
-      max := x;
+    if x < 1 then
+      max1 := max(max1, x);
   end;
-    if not found then
-     Writeln('1 ',max:3:1)
+  if not f then
+    Writeln('1 ', max1: 0: 1)
   else
-    Writeln(k, ' ',sum:3:1);
+    Writeln(q, ' ', min1: 0: 1);
 end.
-
