@@ -1,8 +1,8 @@
 program test;
 
 const
-  Nlim = 10000;
-  Vlim = 1000;
+  Nlim = 50;
+  Vlim = 50;
 var
   a: array [1..Nlim] of longint;
   n, i, t: longint;
@@ -66,10 +66,10 @@ begin
     n := Nlim - random(NLim mod  2);
     randomize();
     for i := 1 to n do
-      a[i] := random(Vlim);
+    a[i] := random(Vlim);
     if simple() <> optimal() then
-      writeln('Error',simple(), ' ',optimal() )
-    else
-      Writeln('Done', simple(), ' ', optimal() );
+      writeln('Error',simple(), ' ',optimal() );
   end;
+      Writeln('Done');
+
 end.
