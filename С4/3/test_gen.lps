@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="11"/>
+    <BuildModes Active="Default"/>
+    <Units Count="2">
+      <Unit0>
+        <Filename Value="test_gen.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <CursorPos X="96"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="simple.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit1>
+    </Units>
+    <JumpHistory Count="4" HistoryIndex="3">
+      <Position1>
+        <Filename Value="simple.pas"/>
+      </Position1>
+      <Position2>
+        <Filename Value="test_gen.lpr"/>
+        <Caret Line="10" Column="8"/>
+      </Position2>
+      <Position3>
+        <Filename Value="test_gen.lpr"/>
+        <Caret Line="11" Column="19"/>
+      </Position3>
+      <Position4>
+        <Filename Value="test_gen.lpr"/>
+        <Caret Line="10" Column="30"/>
+      </Position4>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes Count="0" ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
