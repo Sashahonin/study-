@@ -4,7 +4,7 @@ const
   D = 99;
 var
   a: array [1..D] of longint;
-  N, i, s, max, x, y : longint;
+  N, i, s, max, D, K : longint;
 begin
   for i := 1 to D  do
     a[i] := 0;
@@ -14,7 +14,7 @@ begin
   for i := 1 to n do
   begin
     readLn(D , K);
-    S := x mod y ;
+    S := D mod K ;
     if s > 0 then
      a[s] := a[s] + 1;
   end;
