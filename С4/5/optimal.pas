@@ -1,12 +1,10 @@
 program optimal;
 uses math;
-const
-  D = 99;
 var
-  a: array [1..D] of longint;
-  N, i, s, max, D, K : longint;
+  a: array [1..99] of longint;
+  N, i, s, max,D, K : longint;
 begin
-  for i := 1 to D  do
+  for i := 1 to 99  do
     a[i] := 0;
 
   readln(N);
@@ -14,12 +12,12 @@ begin
   for i := 1 to n do
   begin
     readLn(D , K);
-    S := D mod K ;
+    S := k mod d ;
     if s > 0 then
      a[s] := a[s] + 1;
   end;
-    for i := 1 to D do
-     if a[i] > max then
-      max := a[i];
+    for i := 1 to 99 do
+     if a[i] >= a[max] then
+      max := i;
     writeln(max);
 end.

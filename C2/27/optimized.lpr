@@ -18,7 +18,7 @@ begin
      cursum := cursum + x;
      curmax :=  max(curmax, x);
     end;
-    allmax := max(allmax, x);
+    allmax := max(allmax, x) ;
     if curmax > allmax then
       maxsum := cursum;
   end;
