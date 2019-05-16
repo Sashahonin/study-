@@ -1,21 +1,28 @@
 program optimal;
 uses math;
 var
-  i, N , Max, X, MaxZ, maxT :longint;
+  i, M, N, D, maxK, x, k, MaxX :longint;
 
 begin
   Readln(N);
-  max := 0;
   for i := 1 to N do
-    readln(x);
-    if floor(sqrt(x)) > max then
-    begin
-      max := floor(sqrt(x));
-      maxZ := x;
-      if (x div max) = max then
-        maxT := max *2 -1
-      else maxT :=  max *2;
-    end;
-     Writeln (maxT);
+  begin
+  Readln(x);
+  m:= floor(sqrt(x));
+  K:= 0;
+  for d := 1 to m do
+  begin
+    if (x mod d = 0) then
+      K +=2;
+    if m*m = x then
+      k -=1;
+  end;
+   if k > maxK then
+   begin
+     MaxX := x;
+     maxK := k;
+   end;
+  end;
+  Writeln(maxX);
 end.
 
