@@ -11,12 +11,10 @@ begin
   m:= floor(sqrt(x));
   K:= 0;
   for d := 1 to m do
-  begin
     if (x mod d = 0) then
       K +=2;
-    if m*m = x then
-      k -=1;
-  end;
+  if m*m = x then
+    k -=1;
    if k > maxK then
    begin
      MaxX := x;
