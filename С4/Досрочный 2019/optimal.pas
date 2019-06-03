@@ -5,7 +5,9 @@ var
 
 begin
     readln(N);
-    k62:=0; k31:=0; k2:=0;
+    k62:=0;
+    k31:=0;
+    k2:=0;
      for i:=1 to N do
      begin
        readln(x);
@@ -16,6 +18,6 @@ begin
        else if x mod 2 = 0 then
          k2 := k2 + 1;
       end;
-    writeln(k62*(k62-1) div 2 + k62*(N-k62) + k2*k31)
+    writeln(k62*(k62-1)  div 2 + k62*(N-k62) + k2*k31);
 end.
 
