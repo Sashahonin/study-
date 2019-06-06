@@ -10,7 +10,7 @@ begin
   readln(N);
   for I := 1 to N do
     readln(a[i]);
-   min := 1000;
+  min := 1001 * 2;
   for i := 1 to N do
     for j := i + 4 to N do
       if A[i] + A[j] < min then
