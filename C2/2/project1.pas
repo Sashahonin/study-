@@ -17,7 +17,7 @@ begin
   Writeln();
 
   S := 0;
-  Y := 0;
+  Y := 1;
   for i := 1 to N do        dghhdh
     if A[i] mod 10 = 5 then
       Begin
